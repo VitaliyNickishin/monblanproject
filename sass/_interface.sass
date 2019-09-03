@@ -1,0 +1,69 @@
+* 
+ margin: 0
+ padding: 0
+ box-sizing: border-box
+
+body
+ background-color: $mainGrey
+ color: $mainBlack
+ font-family: 'Oswald', sans-serif
+ font-size: 14px
+
+a
+ color: $mainWhite
+ &:hover
+  text-decoration: none
+  color: $scBlue
+
+img
+ max-width: 100% //картинка не может быть больше своего родителя
+
+button
+ border: none 
+ &:hover
+  cursor: pointer
+ &:focus
+  outline: none
+
+ul
+ padding: 0
+ list-style: none
+  
+p
+ margin: 0
+
+/*Настройка секций*/
+.section
+ padding: 6rem 0 3rem
+ &-title
+  font-size: 2rem
+  text-align: center
+  text-transform: uppercase
+ &-subtitle
+  font-size: 1.3rem
+ &__title //внешнюю геометрию задаем элементам по БЭМ, а не блокам
+  margin-bottom: 3rem
+
+
+/*кнопка*/
+.button
+	padding: 1rem 3rem
+	border-radius: 8px
+	font-size: 1.2rem
+	background-color: $scBlue
+	color: $mainWhite
+	//text-transform: uppercase
+	transition: all 0.2s
+	&:hover
+		background-color: lighten($scBlue, 10%)
+		//background-color: darken($scBlue, 20%)
+  color: $mainBlue
+	
+
+
+
+@media (max-width: 400px)
+ .slick-prev
+  left: -10px
+ .slick-next
+  right: -10px
