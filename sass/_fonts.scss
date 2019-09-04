@@ -6,14 +6,14 @@
  url('../fonts/MyriadPro-Regular.ttf') format('truetype');
  font-weight: normal;
  font-style: normal;
- }
+}
 
 @font-face {
  font-family: 'Helvetica Neue';
  src: url('../fonts/HelveticaNeue.ttf');
  font-weight: normal;
  font-style: normal;
- }
+}
 
 @font-face {
  font-family: 'Proxima Nova Regular';
@@ -23,17 +23,28 @@
  url('../fonts/ProximaNova-Regular.ttf') format('truetype');
  font-weight: normal;
  font-style: normal;
- }
+}
 
- @font-face {
-  font-family: 'Tahoma Regular';
-  src: url('../fonts/Tahoma.eot');
-  src: url('../fonts/Tahoma.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Tahoma.woff') format('woff'),
-  url('../fonts/Tahoma.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  }
+@font-face {
+ font-family: 'Tahoma Regular';
+ src: url('../fonts/Tahoma.eot');
+ src: url('../fonts/Tahoma.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/Tahoma.woff') format('woff'),
+ url('../fonts/Tahoma.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'Proxima Nova Semibold';
+ src: url('../fonts/ProximaNova-Semibold.eot');
+ src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+ url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
 
 @mixin myriad {
  font-family: 'Myriad Pro Regular', sans-serif;
@@ -46,4 +57,7 @@
 }
 @mixin tahoma {
  font-family: 'Tahoma Regular', sans-serif;
+}
+@mixin semibold {
+ font-family: 'Proxima Nova Semibold', sans-serif;
 }

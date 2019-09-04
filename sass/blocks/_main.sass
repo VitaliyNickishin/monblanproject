@@ -1,0 +1,119 @@
+.main
+ padding: 99px 0 75px
+ // background-color: $mainBg
+ &-btn
+  margin-top: 30px
+  // text-align: center
+  margin-left: 37%
+  // margin: auto
+  // width: 124px
+  
+
+.box
+ position: relative
+ // overflow: hidden
+ // width: 292px
+ &:hover .box-content
+  opacity: 1
+ &-three
+  position: relative
+  // margin-left: -50px
+ &-image
+  position: relative
+  width: 292px
+  height: auto
+  transition: all .5s ease
+  &:hover
+   transform: scale(1.05)
+  &:hover:before
+   opacity: 0
+  
+  &:before
+   content: ""
+   position: absolute
+   top: 0
+   left: 0
+   right: 0
+   bottom: 0
+   background-color: $mainBlack
+   width: 100%
+   height: 100%
+   opacity: 0.5
+
+ &-content
+  font-size: 17px
+  opacity: 0.5
+  &__row
+   display: flex
+   align-items: center
+   position: absolute
+   bottom: 96px
+   left: 20px
+   &_two
+    bottom: 57px
+   &_upone
+    bottom: 144px
+    left: 26px
+   &_uptwo
+    bottom: 104px
+    left: 26px
+  &__title
+   width: 102px
+   +semibold
+  &__favorite
+   display: flex
+   align-items: center
+   width: 79px
+   img
+    height: 19px
+    margin-right: 5px
+  &__comment
+   display: flex
+   align-items: center
+   width: 40px
+   img
+    margin-right: 10px
+  &__play
+   display: flex
+   align-items: center
+   width: 79px
+   img
+    margin-right: 10px
+  &__upload
+   position: absolute
+   bottom: 10px
+   left: 50px
+   width: 200px
+  &__camera
+   position: absolute
+   width: 38px
+   top: 10px
+   left: 243px
+ 
+.col-lg-4
+ max-width: 28.33333% 
+.row-next
+ margin-top: 12px
+
+@media (max-width: 1200px)
+ .main
+  &-btn
+   margin-left: 43%
+ .col-lg-4
+  max-width: 33.33333%
+
+@media (max-width: 992px)
+ .col-lg-4
+  max-width: 50% 
+
+@media (max-width: 768px)
+ .main
+  &-btn
+   margin-left: 17%
+ .col-lg-4
+  max-width: 51% 
+ 
+@media (max-width: 576px)
+ .main
+  &-btn
+   margin-left: 30%
