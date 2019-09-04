@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tahoma Regular';
+  src: url("../fonts/Tahoma.eot");
+  src: url("../fonts/Tahoma.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma.woff") format("woff"), url("../fonts/Tahoma.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  color: #262626;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+/*Настройка секций*/
+.section {
+  padding: 6rem 0 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 1.3rem;
+}
+
+.section__title {
+  margin-bottom: 3rem;
+}
+
+/*кнопка*/
+.button {
+  padding: 3px 12px;
+  border-radius: 2px;
+  font-family: 'Helvetica Neue', serif;
+  border: 1px solid #4090db;
+  background-color: transparent;
+  color: #4090db;
+  letter-spacing: -0.6px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-color: #6ba9e3;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.profile {
+  padding-top: 30px;
+  padding-left: 65px;
+}
+
+.profile-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-title h1 {
+  font-size: 35px;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  letter-spacing: -1.4px;
+}
+
+.profile-btn {
+  margin-left: 22px;
+}
+
+.profile-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6px;
+}
+
+.profile-stats__posts {
+  margin-right: 38px;
+}
+
+.profile-date {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
+  font-size: 17px;
+  font-family: 'Tahoma Regular', sans-serif;
+}
+
+.profile-date p {
+  margin-right: 18px;
+}
+
+.posts strong {
+  font-size: 17px;
+}
+
+.posts span {
+  color: #3d4044;
+}
+
+@media (max-width: 1200px) {
+  .profile {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    padding-left: 0;
+  }
+  .profile-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    text-align: center;
+  }
+  .profile {
+    padding-left: 0;
+  }
+  .profile-title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile-stats {
+    margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profile-date {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

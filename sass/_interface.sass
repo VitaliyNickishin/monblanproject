@@ -4,16 +4,16 @@
  box-sizing: border-box
 
 body
- background-color: $mainGrey
+ background-color: $mainBg
  color: $mainBlack
- font-family: 'Oswald', sans-serif
- font-size: 14px
+ +proxima
+ font-size: 15px
 
 a
  color: $mainWhite
  &:hover
   text-decoration: none
-  color: $scBlue
+  //color: $scBlue
 
 img
  max-width: 100% //картинка не может быть больше своего родителя
@@ -47,23 +47,17 @@ p
 
 /*кнопка*/
 .button
-	padding: 1rem 3rem
-	border-radius: 8px
-	font-size: 1.2rem
-	background-color: $scBlue
-	color: $mainWhite
-	//text-transform: uppercase
+	padding: 3px 12px
+	border-radius: 2px
+ font-family: 'Helvetica Neue', serif
+ border: 1px solid $mainBlue
+	background-color: transparent
+	color: $mainBlue
+ letter-spacing: -0.6px
 	transition: all 0.2s
 	&:hover
-		background-color: lighten($scBlue, 10%)
-		//background-color: darken($scBlue, 20%)
-  color: $mainBlue
+		background-color: lighten($mainBlue, 10%)
+		//background-color: darken($mainBlue, 20%)
+  color: $mainWhite
 	
 
-
-
-@media (max-width: 400px)
- .slick-prev
-  left: -10px
- .slick-next
-  right: -10px

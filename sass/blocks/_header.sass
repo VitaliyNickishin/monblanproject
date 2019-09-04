@@ -1,23 +1,65 @@
 .header
- 
- 
- 
+ background-color: $mainWhite
+ box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06)
 
-@media screen and (max-width: 1200px)
- .menu
+.profile
+ padding-top: 30px
+ padding-left: 65px
+ &-title
+  display: flex
+  align-items: center
+  h1
+   font-size: 35px
+   +myriad
+   letter-spacing: -1.4px
+ &-btn
+  margin-left: 22px
+ &-stats
+  display: flex
+  margin-top: 6px
+  &__posts
+   margin-right: 38px
+ &-date
+  margin-top: 14px
+  display: flex
+  align-items: center
+  width: 260px
+  font-size: 17px
+  +tahoma
+  p
+   margin-right: 18px
+
+
+.posts
+ strong
+  font-size: 17px
+ span
+  color: $mainGrey
+
+@media (max-width: 1200px)
+ .profile
+  padding-top: 10px
+
+@media (max-width: 768px)
+ .profile
+  padding-left: 0
+  &-title
+   flex-direction: column
+   align-items: flex-start
+
+@media (max-width: 576px)
+ .header
+  text-align: center
+ .profile
+  padding-left: 0
+  &-title
+   align-items: center
+  &-stats
+   margin-top: 20px
+   justify-content: center 
+  &-date
+   width: 100%
+   flex-direction: column
+   justify-content: center
   
-
-@media screen and (max-width: 992px)
- .menu
-  
-  
- 
-
-@media screen and (max-width: 768px)
- 
-
-@media screen and (max-width: 450px)
- 
-
-@media screen and (max-width: 350px)
- 
+    

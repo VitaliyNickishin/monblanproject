@@ -11,24 +11,73 @@
  <!-- Bootstrap -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
- <!-- google fonts -->
- <link href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker&display=swap" rel="stylesheet">
-    
- <!-- font awesome -->
-	<script src="https://kit.fontawesome.com/5a15e4e666.js"></script>
-	
-	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+ 
+  <!-- daterangepicker -->
+ <link rel="stylesheet" href="css/daterangepicker.css">
   <!-- Main style -->
  <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
-	
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-12">
+						<div class="logo">
+							<img src="img/logo.png" alt="logo">
+						</div><!-- /.logo -->
+					</div><!-- /.col-lg-2 -->
+
+				<div class="col-lg-10 col-md-9 col-sm-8 col-12">
+						<div class="profile">
+
+							<div class="profile-title">
+								<h1>monblanproject</h1>
+								<div class="profile-btn">
+								<button class="button">Start on 17-02-2016</button>
+							</div><!-- /.profile-btn -->
+							</div><!-- /.profile-title -->
+							
+
+							<div class="profile-stats">
+
+								<div class="posts profile-stats__posts">
+									<strong>870</strong>
+									<span>posts</span>
+								</div><!-- /.posts -->
+
+								<div class="posts profile-stats__posts">
+										<strong>11,787</strong>
+										<span>followers</span>
+								</div><!-- /.posts -->
+
+								<div class="posts profile-stats__posts">
+										<strong>112</strong>
+										<span>following</span>
+								</div><!-- /.posts -->
+
+							</div><!-- /.profile-stats -->
+
+							<div class="profile-date">
+								<p>Date</p>
+								<!-- <input type="date" id="picker" class="form-control"> -->
+								<input type="text" id="picker" class="form-control">
+							
+							<!-- /.profile-date -->
+						</div><!-- /.profile -->
+					</div><!-- /.col-lg-10 -->
+
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</header><!-- /.header -->
 
  <!--Bootstrap( JS, Popper.js, and jQuery )-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<!-- daterangepicker -->
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
 
 <script src="js/main.js"></script> 
 </body>
